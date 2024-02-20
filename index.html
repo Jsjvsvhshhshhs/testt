@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Video</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    #background-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+    }
+    #content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        text-align: center;
+        z-index: 1000;
+    }
+</style>
+</head>
+<body>
+<video autoplay loop id="background-video">
+    <source src="fe1ade0640f605bffcf97437b162d436_5fb892608704f346fa3f1c99bfe2641a.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div id="content">
+    <h1>Your Content Here</h1>
+    <p>This is the content that will appear on top of the video.</p>
+</div>
+</body>
+</html>
